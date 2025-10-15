@@ -47,7 +47,7 @@ function Login() {
       <Container w={450} h={420}>
         <Stack>
           <Fieldset style={{ borderColor: "#71675e", borderWidth: "2px", borderRadius: "5px" }}>
-            <Image src="/src/images/logo_login.png" alt="Inventario ICINF UA" h={"auto"} w={380}></Image>
+            <Image src="../images/logo_login.png" alt="Inventario ICINF UA" h={"auto"} w={380}></Image>
 
             <form onSubmit={handleSubmit}>
               <TextInput
