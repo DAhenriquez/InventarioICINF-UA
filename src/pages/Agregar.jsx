@@ -6,6 +6,7 @@ import list_componentes from "./json_files/list_componentes";
 import { useState } from 'react';
 import './Componentes.css'
 import './Prestar.css'
+import user from '../images/Componentes/masculino.png'
 
 function Agregar(){
     const navigate = useNavigate();
@@ -57,7 +58,6 @@ function Agregar(){
     const handleCancel = () => {
         navigate('/home');
     }
-    const [value, setValue] = useState('');
 
     return (
         <>
@@ -69,7 +69,7 @@ function Agregar(){
         <main>
             <aside className="menu-lateral">
                 <div className="user-info">
-                    <Image src="/src/images/masculino.png" alt="User Icon" h={80} w={"auto"} radius="md"></Image>
+                    <Image src={user} alt="User Icon" h={80} w={"auto"} radius="md"></Image>
                     <Text c="#602f09" size="lg" weight={500} mt="sm">Usuario</Text>
                     <Badge color="brown" variant="light" mt="xs">Rol</Badge>
                 </div>

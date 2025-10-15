@@ -5,6 +5,7 @@ import { Link } from "react-router";
 import list_users from "./json_files/list_users";
 import { useEffect, useState } from "react";
 import list_componentes_eliminados from "./json_files/list_componentes_eliminados";
+import user from '../images/Componentes/masculino.png'
 
 function Home(){
 
@@ -35,7 +36,7 @@ function Home(){
         <main>
             <aside className="menu-lateral">
                 <div className="user-info">
-                    <Image src="/src/images/masculino.png" alt="User Icon" h={80} w={"auto"} radius="md"></Image>
+                    <Image src={user} alt="User Icon" h={80} w={"auto"} radius="md"></Image>
                     <Text c="#602f09" size="lg" weight={500} mt="sm">Usuario</Text>
                     <Badge color="brown" variant="light" mt="xs">Rol</Badge>
                 </div>

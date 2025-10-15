@@ -8,6 +8,7 @@ import prestamos from './json_files/list_prestamos';
 import list_users from './json_files/list_users';
 import './Componentes.css'
 import './Prestar.css'
+import user from '../images/Componentes/masculino.png'
 
 function Prestar(){
     const navigate = useNavigate();
@@ -65,7 +66,7 @@ function Prestar(){
         <main>
             <aside className="menu-lateral">
                 <div className="user-info">
-                    <Image src="/src/images/masculino.png" alt="User Icon" h={80} w={"auto"} radius="md"></Image>
+                    <Image src={user} alt="User Icon" h={80} w={"auto"} radius="md"></Image>
                     <Text c="#602f09" size="lg" weight={500} mt="sm">Usuario</Text>
                     <Badge color="brown" variant="light" mt="xs">Rol</Badge>
                 </div>

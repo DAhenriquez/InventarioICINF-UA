@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Stack, Fieldset, Image, TextInput, Button } from '@mantine/core';
-import { Link, useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import './Login.css'
-
+import logo_login from '../images/Componentes/logo_login.png'
 import credenciales from './json_files/credenciales.jsx'; 
 
 function Login() {
@@ -47,7 +47,7 @@ function Login() {
       <Container w={450} h={420}>
         <Stack>
           <Fieldset style={{ borderColor: "#71675e", borderWidth: "2px", borderRadius: "5px" }}>
-            <Image src="../images/logo_login.png" alt="Inventario ICINF UA" h={"auto"} w={380}></Image>
+            <Image src={logo_login} alt="Inventario ICINF UA" h={"auto"} w={380}></Image>
 
             <form onSubmit={handleSubmit}>
               <TextInput

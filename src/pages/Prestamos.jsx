@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router';
 import logo from "../images/Barra-superior.png"
 import './Home.css'
 import './Componentes.css'
-
+import user from '../images/Componentes/masculino.png'
 
 function Prestamos(){
     const navigate = useNavigate();
@@ -80,7 +80,7 @@ function Prestamos(){
                 <main>
                     <aside className="menu-lateral">
                         <div className="user-info">
-                            <Image src="/src/images/masculino.png" alt="User Icon" h={80} w={"auto"} radius="md"></Image>
+                            <Image src={user} alt="User Icon" h={80} w={"auto"} radius="md"></Image>
                             <Text c="#602f09" size="lg" weight={500} mt="sm">Usuario</Text>
                             <Badge color="brown" variant="light" mt="xs">Rol</Badge>
                         </div>

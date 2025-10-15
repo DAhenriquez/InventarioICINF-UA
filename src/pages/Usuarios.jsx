@@ -4,7 +4,6 @@ import './Home.css'
 import './Componentes.css'
 import { Link } from "react-router";
 import list_users from "./json_files/list_users";
-import { useDisclosure } from "@mantine/hooks";
 
 function Usuarios(){
 
