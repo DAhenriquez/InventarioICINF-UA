@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Stack, Fieldset, Image, TextInput, Button } from '@mantine/core';
 import { useNavigate } from 'react-router';
 import './Login.css'
-import logo_login from '../images/Componentes/logo_login.png'
+import logo_login from '../images/logo_login.png'
 import credenciales from './json_files/credenciales.jsx'; 
 
 function Login() {
