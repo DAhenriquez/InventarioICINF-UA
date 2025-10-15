@@ -1,0 +1,65 @@
+:root{
+  --barra-superior-color:#a67753;
+  --menu-color:#caa68b;
+  --text:#602f09;
+}
+
+.prestar-form {
+  min-height: calc(100vh - 150px);
+  margin-left: 240px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.prestar-form .labels{
+    font-size: 0.8rem;
+    font-weight: 550;
+    color: var(--text);
+}
+
+.prestar-form .buttons{
+    margin-top: 20px;
+}
+
+.prestar-form .mantine-Text-root {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.prestar-form .mantine.Group-root{
+    padding-top: 5px;
+}
+
+.prestar-form .mantine-NumberInput-root,
+.prestar-form .mantine-TextInput-root,
+.prestar-form .mantine-Textarea-root {
+  background: transparent;
+}
+
+.prestar-form .mantine-Input-wrapper {
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+}
+
+.prestar-form .mantine-Button-root {
+  background: var(--barra-superior-color);
+  color: white;
+  border-radius: 6px;
+}
+
+.prestar-form .mantine-Button-root[variant="default"] {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(96,47,9,0.15);
+}
+
+.prestar-form .mantine-Notification-root {
+  border-radius: 6px;
+}
+
+@media (max-width: 720px) {
+  .prestar-form { padding: 12px; }
+  .prestar-form > div { width: 100%; }
+}

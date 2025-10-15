@@ -1,0 +1,173 @@
+:root{
+  --barra-superior-color:#a67753;
+  --menu-color:#caa68b;
+  --text:#602f09;
+}
+
+.barra-superior {
+  background-color: var(--barra-superior-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 0 5px;
+  height: 90px;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+
+.barra-superior .mantine-Image-root {
+  height: 60px;
+  width: auto;
+  margin-left: 0px;
+}
+
+.barra-superior .mantine-Image-root:hover {
+  filter: none;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+
+.menu-lateral {
+  background-color: var(--menu-color);
+  width: 280px; 
+  height: calc(100vh - 90px); 
+  position: fixed; 
+  top: 90px; 
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  z-index: 10;
+}
+
+
+.menu-lateral .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 30px; 
+}
+
+.menu-lateral .user-info .mantine-Image-root {
+  margin: 3px;
+}
+
+.menu-lateral .user-info .mantine-Image-root:hover {
+  filter: none;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.menu-lateral .user-info .mantine-Text-root {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.menu-lateral .user-info .mantine-Badge-root {
+  background-color: var(--barra-superior-color);
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+
+
+
+.menu-lateral .menu-items {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.menu-lateral .menu-items .mantine-NavLink-root {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: var(--text);
+  text-size-adjust: 100%;
+}
+
+.menu-lateral .menu-items .mantine-NavLink-root:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+  border-radius: 5px;
+}
+
+.navlink-label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Logout {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  min-height: calc(100vh - 150px);
+  margin-left: 240px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.cards-grid .mantine-Grid-root {
+  display: grid;
+  align-items: center;
+  justify-items: center; 
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 0; 
+}
+
+
+.card-action {
+  width: 300px; 
+  box-sizing: border-box;
+  justify-content:space-between;
+}
+
+
+.card-action .mantine-Card-root,
+.card-action.mantine-Card-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+
+.card-action .mantine-Text-root {
+  line-height: 1.2;
+}
+
+
+
+@media (max-width: 900px) {
+  .menu-lateral { width: 220px; }
+  .main-content { margin-left: 220px; padding: 110px 16px 16px 16px; }
+  .cards-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  .menu-lateral { position: relative; width: 100%; height: auto; top: 0; }
+  .main-content { margin-left: 0; padding-top: 20px; }
+}
