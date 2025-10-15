@@ -33,7 +33,7 @@ function Login() {
       navigate('/home'); 
       
     } else {
-      setError('Credenciales incorrectas. Verifica tu email y contraseña.');
+      setError('Credenciales incorrectas. Verifica tu email y contraseña. email: admin@admin password: admin');
     }
   };
 
