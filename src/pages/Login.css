@@ -1,0 +1,57 @@
+
+:root{
+  --textinput:#efe2cf;
+  --bordercolor: #602f09;
+  --gray-text: #363636;
+}
+
+.Login{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  box-sizing: border-box;
+  z-index: 2000;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+
+.Login .mantine-Container-root {
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.Login .mantine-Image-root {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+
+@media (max-width: 420px) {
+  .Login { padding: 8px; }
+  .Login .mantine-Container-root { width: 100%; padding: 8px; }
+  .textinput .mantine-TextInput-input { font-size: 0.95rem; }
+}
+
+
+.textinput .mantine-TextInput-input{
+  background-color:var(--textinput);
+  color: var(--gray-text);
+}
+
+.textinput .mantine-TextInput-input:hover{
+  border: 1px solid var(--bordercolor) ;
+  animation: none;
+}
+
+
+.textinput .mantine-TextInput-input:focus{
+  border: 1px solid var(--bordercolor) ;
+}

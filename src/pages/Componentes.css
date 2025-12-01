@@ -1,0 +1,51 @@
+
+
+.main-contentComponentes{
+    margin-left: 20vh;
+    padding: calc(var(--topbar-height, 30px) + 12px) 30px 30px 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.tableofcontent,
+.tableofcontent.mantine-Table-root,
+.tableofcontent.mantine-Table-table {
+    background-color: #d8baa3;;
+    width: 100%;
+}
+
+
+.tableofcontent { overflow-x: auto; }
+
+
+.indexes,
+.indexes.mantine-Text-root{
+        text-align: center;
+        display: block; 
+        width: 100%;
+}
+
+
+
+.actions .mantine-Button-root{
+    display: block;
+    margin-block: 10px;
+}
+
+.tableofcontent td,
+.tableofcontent .mantine-Table-td {
+    padding: 12px 14px;
+    vertical-align: middle;
+}
+
+.tableofcontent td .actions,
+.tableofcontent .mantine-Button-root.actions {
+    margin: 6px 6px 0 0;
+    min-width: 120px;
+}
+
+@media (max-width: 600px) {
+    .tableofcontent td .actions { display: block; width: 100%; }
+}
