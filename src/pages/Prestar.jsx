@@ -41,7 +41,7 @@ function Prestar(){
 
         try {
             // 2. ENVIAMOS LOS DATOS A LARAVEL
-            const response = await fetch('http://127.0.0.1:8000/api/prestamos', {
+            const response = await fetch('https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/prestamos', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

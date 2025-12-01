@@ -24,7 +24,7 @@ function Componentes_eliminados(){
         const fetchBajas = async () => {
             try {
                 // Usamos el endpoint que creamos previamente
-                const response = await fetch('http://127.0.0.1:8000/api/bajas', {
+                const response = await fetch('https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/bajas', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

@@ -23,7 +23,7 @@ function Usuarios(){
     useEffect(() => {
         const fetchUsuarios = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/users', {
+                const response = await fetch('https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/users', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

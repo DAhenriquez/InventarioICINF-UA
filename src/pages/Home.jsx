@@ -22,12 +22,12 @@ function Home() {
         const fetchDatosDashboard = async () => {
             try {
                 // Petición 1: Usuarios
-                const resUsers = await fetch('http://127.0.0.1:8000/api/users', {
+                const resUsers = await fetch('https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/users', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 
                 // Petición 2: Bajas
-                const resBajas = await fetch('http://127.0.0.1:8000/api/bajas', {
+                const resBajas = await fetch('https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/bajas', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
 

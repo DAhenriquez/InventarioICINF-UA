@@ -55,7 +55,7 @@ function Agregar(){
             
             if (id) payload.id = Number(id);
 
-            const response = await fetch('http://127.0.0.1:8000/api/componentes', {
+            const response = await fetch('https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/componentes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

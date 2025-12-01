@@ -22,7 +22,7 @@ function Prestamos(){
     // 2. CARGAR PRÉSTAMOS DE LA API
     const fetchPrestamos = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/prestamos', {
+            const response = await fetch('https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/prestamos', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`
@@ -54,7 +54,7 @@ function Prestamos(){
 
         try {
             // Llamada al endpoint en Laravel: PUT /api/prestamos/{id}/devolver
-            const response = await fetch(`http://127.0.0.1:8000/api/prestamos/${p.id}/devolver`, {
+            const response = await fetch(`https://better-missy-universidad-autonoma-de-chile-3f410c93.koyeb.app/api/prestamos/${p.id}/devolver`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
